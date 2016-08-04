@@ -1,0 +1,14 @@
+E:\MyPro\RoguelikeProject\Temp\bin\Debug\Assembly-CSharp.dll
+E:\MyPro\RoguelikeProject\Temp\bin\Debug\Assembly-CSharp.pdb
+E:\MyPro\RoguelikeProject\Temp\bin\Debug\UnityEditor.dll
+E:\MyPro\RoguelikeProject\Temp\bin\Debug\UnityEditor.iOS.Extensions.Xcode.dll
+E:\MyPro\RoguelikeProject\Temp\bin\Debug\UnityEngine.dll
+E:\MyPro\RoguelikeProject\Temp\bin\Debug\UnityEngine.UI.dll
+E:\MyPro\RoguelikeProject\Temp\bin\Debug\Mono.Cecil.dll
+E:\MyPro\RoguelikeProject\Temp\bin\Debug\Unity.SerializationLogic.dll
+E:\MyPro\RoguelikeProject\Temp\bin\Debug\Unity.DataContract.dll
+E:\MyPro\RoguelikeProject\Temp\bin\Debug\ICSharpCode.NRefactory.dll
+E:\MyPro\RoguelikeProject\Temp\bin\Debug\Unity.CecilTools.dll
+E:\MyPro\RoguelikeProject\obj\Debug\Assembly-CSharp-vs.csprojResolveAssemblyReference.cache
+E:\MyPro\RoguelikeProject\obj\Debug\Assembly-CSharp.dll
+E:\MyPro\RoguelikeProject\obj\Debug\Assembly-CSharp.pdb
