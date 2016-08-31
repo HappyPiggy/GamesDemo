@@ -15,6 +15,24 @@ public class Player : MonoBehaviour
     public float tilt;
     public Boundary boudary;
 
+    public float fireRate;
+    public GameObject shoot;
+    public Transform shootSpawn;
+
+
+    private float nextFire;
+
+    void Update()
+    {
+       
+        if (Input.GetButton("Fire1") && Time.time > nextFire)
+        {
+            nextFire = Time.time + fireRate;
+           // GameObject clone = 
+            Instantiate(shoot, shootSpawn.position, shootSpawn.rotation);// as GameObject;
+        }
+    }
+
     void FixedUpdate()
     {
         float moveHorizontal = Input.GetAxis("Horizontal");
