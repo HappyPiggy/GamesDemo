@@ -57,6 +57,8 @@
      <Compile Include="Assets\Done\Done_Scripts\Done_WeaponController.cs" />
      <Compile Include="Assets\Scrips\AsteriodDestory.cs" />
      <Compile Include="Assets\Scrips\BoundaryDestory.cs" />
+     <Compile Include="Assets\Scrips\DestoryByTime.cs" />
+     <Compile Include="Assets\Scrips\GameController.cs" />
      <Compile Include="Assets\Scrips\Mover.cs" />
      <Compile Include="Assets\Scrips\Player.cs" />
      <Compile Include="Assets\Scrips\RandomRotate.cs" />
