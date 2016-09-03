@@ -6,6 +6,23 @@ public class AsteriodDestory : MonoBehaviour
 
     public GameObject asteriodExplosion;
     public GameObject palyerExplosion;
+    public int getScore;
+
+    private GameController gameController;
+    
+
+    void Start()
+    {
+        GameObject gameControllerObject =GameObject.FindGameObjectWithTag("GameController");
+        if (gameControllerObject != null)
+        {
+            gameController = gameControllerObject.GetComponent<GameController>();
+        }
+        if (gameController == null)
+        {
+            Debug.Log("can't find GameController Script");
+        }
+    }
 
     void OnTriggerEnter(Collider other)
     {
@@ -17,10 +34,16 @@ public class AsteriodDestory : MonoBehaviour
         if (other.CompareTag("Player"))
         {
             Instantiate(palyerExplosion, other.transform.position, other.transform.rotation);
+            Destroy(other.gameObject);
+            gameController.Gameover();
         }
 
-        Instantiate(asteriodExplosion,transform.position,transform.rotation);
-        Destroy(other.gameObject);
-        Destroy(gameObject);
+      
+            gameController.AddScore(getScore);
+            Instantiate(asteriodExplosion, transform.position, transform.rotation);
+            Destroy(gameObject);
+           
+      
+      
     }
 }

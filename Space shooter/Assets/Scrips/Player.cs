@@ -27,7 +27,7 @@ public class Player : MonoBehaviour
        
         if (Input.GetButton("Fire1") && Time.time > nextFire)
         {
-            Debug.Log("123");
+           
             nextFire = Time.time + fireRate;
            // GameObject clone = 
             Instantiate(shoot, shootSpawn.position, shootSpawn.rotation);// as GameObject;
