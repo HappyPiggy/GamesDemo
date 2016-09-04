@@ -5,7 +5,7 @@ using UnityEngine.UI;
 public class GameController : MonoBehaviour
 {
 
-    public GameObject asteriod;
+    public GameObject[] asteriods;
     public Vector3 spawnPosition;
     public int asteriodCount;
     public float waitTime;
@@ -73,6 +73,7 @@ public class GameController : MonoBehaviour
            
             for (int i = 0; i < asteriodCount; i++)
             {
+                GameObject asteriod = asteriods[Random.Range(0, asteriods.Length)];
                 Vector3 randomPos = new Vector3(Random.Range(-spawnPosition.x, spawnPosition.x), spawnPosition.y, spawnPosition.z);
                 Instantiate(asteriod, randomPos, Quaternion.identity);
 
