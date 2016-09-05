@@ -15,8 +15,10 @@ public class BackgroundScroll : MonoBehaviour
 
 	void Update ()
 	{
+       
 
 	    float newPosition= Mathf.Repeat(Time.time*scrollSpeed,tileSize);
-	    transform.position = startPosition + -Vector3.forward * newPosition;
+      //  Debug.Log(newPosition);
+	    transform.position = startPosition + Vector3.forward * newPosition;
 	}
 }
