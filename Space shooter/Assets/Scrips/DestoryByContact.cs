@@ -1,10 +1,10 @@
 ﻿using UnityEngine;
 using System.Collections;
 
-public class AsteriodDestory : MonoBehaviour
+public class DestoryByContact : MonoBehaviour
 {
 
-    public GameObject asteriodExplosion;
+    public GameObject selfExplosion;
     public GameObject palyerExplosion;
     public int getScore;
 
@@ -40,7 +40,7 @@ public class AsteriodDestory : MonoBehaviour
 
       
             gameController.AddScore(getScore);
-            Instantiate(asteriodExplosion, transform.position, transform.rotation);
+            Instantiate(selfExplosion, transform.position, transform.rotation);
             Destroy(gameObject);
            
       
