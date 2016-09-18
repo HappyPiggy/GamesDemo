@@ -59,6 +59,7 @@
      <Compile Include="Assets\Scrips\BoundaryDestory.cs" />
      <Compile Include="Assets\Scrips\DestoryByContact.cs" />
      <Compile Include="Assets\Scrips\DestoryByTime.cs" />
+     <Compile Include="Assets\Scrips\EvasiveManeuver.cs" />
      <Compile Include="Assets\Scrips\GameController.cs" />
      <Compile Include="Assets\Scrips\Mover.cs" />
      <Compile Include="Assets\Scrips\Player.cs" />

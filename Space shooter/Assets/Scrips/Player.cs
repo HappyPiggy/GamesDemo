@@ -17,7 +17,7 @@ public class Player : MonoBehaviour
 
     public float fireRate;
     public GameObject shoot;
-    public Transform shootSpawn;
+    public Transform[] shootSpawns;
 
 
     private float nextFire;
@@ -30,7 +30,8 @@ public class Player : MonoBehaviour
            
             nextFire = Time.time + fireRate;
            // GameObject clone = 
-            Instantiate(shoot, shootSpawn.position, shootSpawn.rotation);// as GameObject;
+            foreach(Transform shootSpawn in shootSpawns)
+                 Instantiate(shoot, shootSpawn.position, shootSpawn.rotation);// as GameObject;
             GetComponent<AudioSource>().Play();
         }
     }
