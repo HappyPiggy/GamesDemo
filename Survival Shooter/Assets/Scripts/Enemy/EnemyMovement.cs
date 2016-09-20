@@ -3,7 +3,7 @@ using System.Collections;
 
 public class EnemyMovement : MonoBehaviour
 {
-    Transform player;
+   Transform player;
     //PlayerHealth playerHealth;
     //EnemyHealth enemyHealth;
     NavMeshAgent nav;
